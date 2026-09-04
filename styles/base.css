@@ -3,6 +3,10 @@
     --fontcolor: white;
 }
 
+header {
+    width: 1200px;
+}
+
 header, main, footer {
     font-family: "Roboto Mono", monospace,; 
 }

@@ -19,7 +19,7 @@ header, main {
     margin: 0 auto;
 }
 
-header h1 {
+header p {
     font-size: 2rem;
     color: #fff;
 }

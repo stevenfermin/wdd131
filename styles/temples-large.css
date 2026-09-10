@@ -1,0 +1,29 @@
+/*Larger views*/
+@media (min-width: 680px){
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+    }
+    
+    .navigation {
+		flex-direction: row;
+        justify-content: flex-end;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+    
+    .close h1 {
+        display: unset;
+    }
+}

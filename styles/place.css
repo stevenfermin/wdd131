@@ -24,3 +24,15 @@ header, main, footer {
 .weather h2::after{
     content: "⛅";
 }
+.weather img{
+    display: none;
+}
+
+@media (min-width: 680px) {
+    .weather h2::after{
+        content: "";
+    }
+    .weather img{
+        display: revert;
+    }
+}

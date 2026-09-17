@@ -1,0 +1,37 @@
+:root{
+    --primary-color: black;
+    --section-color: beige;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+}
+
+.data, .weather{
+    background-color: var(--section-color);
+    width: 10rem;
+    height: 0 auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    top: 1rem;
+    left: 1rem;
+}
+
+.weather{
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.data h1, .weather h1{
+    background-color: green;
+}

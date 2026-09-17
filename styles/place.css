@@ -20,3 +20,7 @@ header, main, footer {
 .data h2, .weather h2{
     background-color: green;
 }
+
+.weather h2::after{
+    content: "⛅";
+}

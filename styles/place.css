@@ -17,6 +17,6 @@ header, main, footer {
     flex-direction: column;
 }
 
-.data h1, .weather h1{
+.data h2, .weather h2{
     background-color: green;
 }

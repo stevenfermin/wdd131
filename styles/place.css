@@ -78,9 +78,9 @@ footer{
     }
 
     .data, .weather{
-        background-color: var(--flag-blue);
+        background-color: var(--flag-white);
         position: absolute;
-        color: var(--flag-white);
+        color: var(--primary-color);
         padding: 1.2rem 0;
         gap: 1rem;
         font-size: 1.2rem;
@@ -92,10 +92,10 @@ footer{
     }
 
     .data {
-        opacity: 65%;
+        opacity: 90%;
         width: 30%;
         top: 1rem;
-        left: 1rem;
+        left: 2rem;
     }
 
     .weather {

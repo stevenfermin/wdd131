@@ -1,37 +1,118 @@
 :root{
     --primary-color: black;
-    --section-color: beige;
+    --flag-white: #fff;
+    --flag-red: red;
+    --flag-blue: blue;
 }
 
-header, main, footer {
-    margin: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--flag-blue);
+}
+
+header, main, footer {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header{
+    color: var(--flag-red);
+}
+
+
+.hero{
+    display: flex;
+    width: 500px;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
 
 .data, .weather{
-    background-color: var(--section-color);
-    width: 10rem;
+    background-color: var(--flag-white);
+    width: 100%;
+    padding: 1rem 1.2rem;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-.data h2, .weather h2{
-    background-color: green;
-}
+
 
 .weather h2::after{
-    content: "⛅";
+    content: "";
 }
 .weather img{
-    display: none;
+    display: revert;
+}
+
+.tbdata, .tbweather{
+    font-size: 1rem;
+}
+
+.tbdata th, .tbweather th{
+    text-align: right;
+}
+
+.tbdata td, .tbweather td{
+    text-align: left;
+}
+
+footer{
+    color: var(--flag-white);
 }
 
 @media (min-width: 680px) {
     .weather h2::after{
-        content: "";
+        content: "    ⛅";
     }
     .weather img{
-        display: revert;
+        display: none;
+    }
+
+    .data, .weather{
+        background-color: var(--flag-blue);
+        position: absolute;
+        color: var(--flag-white);
+        padding: 1.2rem 0;
+        gap: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .hero{
+        width: 100%;
+        position: relative;
+    }
+
+    .data {
+        opacity: 65%;
+        width: 30%;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .weather {
+        opacity: 70%;
+        width: 25%;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .data h2, .weather h2{
+    position: relative;
+    right: 1.5rem;
+    background-color: var(--flag-red);
+    width: 95%;
+    }
+
+    .tbdata, .tbweather{
+        font-size: large;
     }
 }

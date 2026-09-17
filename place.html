@@ -14,74 +14,78 @@
         <h1>Dominican Republic</h1>
     </header>
     <main>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <div class="hero">
             <picture>
                 <source srcset="images/rd-large.webp" media="(min-width: 1000px)">
                 <source srcset="images/rd-medium.webp" media="(min-width: 500px)">
-                <img src="images/rd-short.webp" alt="Dominican Republic Picture" width="500" height="250">
+                <img src="images/rd-short.webp" alt="Dominican Republic Picture">
             </picture>
         <section class="data">
             <h2>Data</h2>
-            <table>
+            <table class="tbdata">
                 <tr>
                     <th>Area:</th>
-                    <td></td>
+                    <td>48 442 sq Kilometers</td>
                 </tr>
                 <tr>
                     <th>Population</th>
-                    <td></td>
+                    <td>11,631,909</td>
                 </tr>
                 <tr>
                     <th>Capital:</th>
-                    <td></td>
+                    <td>Santo Domingo</td>
                 </tr>
                 <tr>
                     <th>Languages:</th>
-                    <td></td>
+                    <td>Spanish</td>
                 </tr>
                 <tr>
                     <th>Currency:</th>
-                    <td></td>
+                    <td>Dominican Pesos</td>
                 </tr>
                 <tr>
-                    <th>Time Zone</th>
-                    <td></td>
+                    <th>Time Zone:</th>
+                    <td>GMT -4</td>
                 </tr>
                 <tr>
-                    <th>Calling Code</th>
-                    <td></td>
+                    <th>Calling Code:</th>
+                    <td>+1</td>
                 </tr>
                 <tr>
-                    <th>Internet TLD</th>
-                    <td></td>
+                    <th>Internet TLD:</th>
+                    <td>.do</td>
                 </tr>
             </table>
         </section>
         <section class="weather">
             <h2>Weather<img src="images/weather.svg" alt=""></h2>
-            <table>
+            <table class="tbweather">
                 <tr>
                     <th>Temperature:</th>
-                    <td></td>
+                    <td id="temperature">29°C</td>
                 </tr>
                 <tr>
                     <th>Conditions:</th>
-                    <td></td>
+                    <td id="conditions">Partly Cloudy</td>
                 </tr>
                 <tr>
                     <th>Wind:</th>
-                    <td></td>
+                    <td id="windspeed">11 km/h</td>
                 </tr>
                 <tr>
-                    <th>Wind Chill</th>
-                    <td></td>
+                    <th>Wind Chill:</th>
+                    <td id="windchill"></td>
                 </tr>
             </table>
         </section>
         </div>
     </main>
     <footer>
-
+        &copy;🌄Cesar Steven Fermin🌄 Dominican Republic
+        <p id="lastModified"></p>
     </footer>
     
 </body>

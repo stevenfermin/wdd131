@@ -9,7 +9,6 @@ header, main, footer {
 }
 
 
-
 .data, .weather{
     background-color: var(--section-color);
     width: 10rem;
@@ -17,8 +16,6 @@ header, main, footer {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .data h1, .weather h1{
     background-color: green;

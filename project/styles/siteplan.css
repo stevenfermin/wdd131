@@ -153,16 +153,30 @@ img {
 .receive form{
     display: flex;
     flex-direction: column;
+    width: 50%;
+    height: 70%;
+    gap: 8%;
+    margin: 0 auto;
+    padding: 5%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 25px;
+    align-items: center;
+}
+
+.receive form div {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20%;
 }
 
 .receive textarea {
-    min-width: 100px;
-    max-width: 100px;
+    width: 140px;
     min-height: 30px;
     max-height: 30px;
+    resize: none;
 }
 
 #thead {

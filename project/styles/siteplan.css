@@ -117,15 +117,32 @@ img {
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
     background-color: var(--primary-design-color);
     width: 95%;
     margin: 0 auto;
     padding: 2em;
     border-radius: 25px;
 }
-.contact table{
+
+.location {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.receive {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.receive h1 {
+    text-align: center;
+}
+
+.location table{
     background-color: var(--primary-color);
     border-radius: 10px;
     color: black;
@@ -133,23 +150,19 @@ img {
     grid-row: 1/2;
 }
 
-.contact iframe {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.contact h1 {
-    grid-column: 1/3;
-    grid-row: 2/3;
-}
-
-.contact form{
+.receive form{
     display: flex;
     flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 3/4;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    border-radius: 25px;
+}
+
+.receive textarea {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 30px;
+    max-height: 30px;
 }
 
 #thead {

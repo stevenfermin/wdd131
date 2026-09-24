@@ -1,0 +1,161 @@
+:root{
+    --primary-design-color: rgb(97,0,0);
+    --second-design-color: rgb(220,50,50);
+    --primary-color: rgb(255,255,255);
+    --secondary-color: rgb(0,0,0);
+    --background: rgba(243, 239, 239, 0.977);
+    --price-color: rgb(10, 255, 6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-color: var(--background);*/
+    background: url('../images/dubai-skyline.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary-color);
+}
+
+
+header, main, footer{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+
+.navigation {
+    margin: 20px;
+    padding: 1em;
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primary-design-color);
+    height: 70px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--seconday-color);
+    font-size: 1.2em;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5em;
+}
+
+/*Main*/
+
+.intro {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--primary-design-color);
+    font-size: 1.2rem;
+    padding: 15px;
+    margin: 25px;
+    border-radius: 25px;
+}
+
+/*Market Page*/
+
+.org {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.org div{
+    background-color: var(--primary-design-color);
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    animation: fade 0.5s ease-out forwards;
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+img {
+    border-radius: 25px;
+}
+
+.price {
+    color: var(--price-color);
+}
+
+/*Contact page*/
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    background-color: var(--primary-design-color);
+    width: 95%;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 25px;
+}
+.contact table{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: black;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.contact iframe {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.contact h1 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#thead {
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 1.5em;
+}
+
+
+/*Footer*/

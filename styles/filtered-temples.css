@@ -99,7 +99,7 @@ nav a:hover {
 main {
     text-align: center;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 main h1{
@@ -108,7 +108,7 @@ main h1{
 
 #container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 25px;
     place-items: center;
 }

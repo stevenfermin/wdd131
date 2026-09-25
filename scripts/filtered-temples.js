@@ -170,3 +170,8 @@ function createTempleCard(filteredTemples) {
 		document.querySelector("#container").append(card);
 	});
 }
+
+let footer = document.getElementById("footer");
+const p = document.createElement("p")
+p.innerHTML = `&copy;🌄Cesar Steven Fermin🌄 Dominican Republic`
+footer.appendChild(p);

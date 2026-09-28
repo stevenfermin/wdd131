@@ -1,0 +1,47 @@
+:root{
+    --head-and-footer: rgb(80,0,0);
+    --text-h-f: rgb(255,255,255);
+}
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+header, main, footer{
+    width: 400px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+/*-------Styling Form--------*/
+
+.wf1{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]{
+    margin: 6px;
+}
+
+.wf1 textarea {
+    resize: none;
+}
+
+header, footer {
+    background-color: var(--head-and-footer);
+    color: var(--text-h-f);
+    text-align: center;
+    margin: 1rem 0;
+}
+

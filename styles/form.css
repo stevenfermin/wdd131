@@ -53,6 +53,7 @@ fieldset label {
 select, input[type="date"]{
     width: 350px;
     padding: .70rem;
+    appearance: none;
 }
 
 .rating {

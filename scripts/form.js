@@ -46,7 +46,7 @@ let Visits = Number(window.localStorage.getItem("Visits-ls")) || 0;
 if (Visits !== 0) {
 	countVisits.textContent = Visits;
 } else {
-	countVisits.textContent = `This is your first visit. 🥳 Welcome!`;
+	countVisits.innerHTML = `This is your first visit. 🥳 Welcome!`;
 }
 
 // 4️⃣ increment the number of visits by one.

@@ -30,6 +30,10 @@ header, main, footer{
     background-color: var(--form-color);
 }
 
+.rating {
+    display: flex;
+}
+
 .wf1 label{
     display: block;
     padding-top: 1rem;

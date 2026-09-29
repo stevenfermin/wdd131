@@ -17,10 +17,6 @@ body{
     margin: 0 auto;
 }
 
-header, footer {
-    padding: 1rem;
-}
-
 header, main, footer{
     width: 400px;
     margin: 0 auto;
@@ -109,9 +105,14 @@ header, footer {
     color: var(--text-h-f);
     text-align: center;
     margin: 1rem 0;
+    padding: 1rem;
 }
 
 @media (min-width: 600px) {
+    header, footer {
+        background-color: var(--form-color);
+        color: var(--head-and-footer);
+    }
     .wf1 {
         background-color: var(--large-color);
     }

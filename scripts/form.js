@@ -26,13 +26,13 @@ const products = [
   }
 ];
 
-products.forEach((products) => {
+products.forEach((product) => {
     let option = document.createElement("option");
     let select =  document.getElementById("productList");
 
-    option.text = products.name;
-    option.value = products.name;
-    option.id = products.name;
+    option.text = product.name;
+    option.value = product.name;
+    option.id = product.name;
     select.add(option);
 });
 

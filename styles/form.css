@@ -2,6 +2,7 @@
     --head-and-footer: rgb(80,0,0);
     --text-h-f: rgb(255,255,255);
     --form-color: rgb(200, 150, 165);
+    --large-color: rgb(141, 108, 108);
 }
 
 * {
@@ -114,3 +115,12 @@ header, footer {
     margin: 1rem 0;
 }
 
+@media (min-width: 600px) {
+    header, footer {
+        background-color: var(--form-color);
+        color: var(--head-and-footer);
+    }
+    .wf1 {
+        background-color: var(--large-color);
+    }
+}

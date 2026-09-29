@@ -1,6 +1,7 @@
 :root{
     --head-and-footer: rgb(80,0,0);
     --text-h-f: rgb(255,255,255);
+    --form-color: rgb(200, 150, 165);
 }
 
 * {
@@ -20,6 +21,7 @@ header, main, footer{
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+    background-color: var(--form-color);
 }
 
 .wf1 label{

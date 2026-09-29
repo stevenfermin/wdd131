@@ -16,6 +16,10 @@ body{
     margin: 0 auto;
 }
 
+header, footer {
+    padding: 1rem;
+}
+
 header, main, footer{
     width: 400px;
     margin: 0 auto;
@@ -28,13 +32,42 @@ header, main, footer{
     max-width: 400px;
     margin: 0 auto;
     background-color: var(--form-color);
+    padding: 1rem;
+}
+
+
+
+fieldset{
+    border: 0;
+}
+
+fieldset label {
+    margin: top;
+}
+
+.overal, .instalation{
+    margin-top: 20px;
+}
+
+
+select, input[type="date"]{
+    width: 350px;
+    padding: .70rem;
 }
 
 .rating {
     display: flex;
 }
 
-.wf1 label{
+.rating label{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+
+
+.feature label, .review label{
     display: block;
     padding-top: 1rem;
     font-size: .9rem;
@@ -45,8 +78,32 @@ header, main, footer{
     margin: 6px;
 }
 
+.review label::after{
+    content: " (optional)";
+    color: rgb(19, 19, 216);
+}
+
 .wf1 textarea {
     resize: none;
+    width: 350px;
+    height: 100px;
+}
+
+.review input{
+    width: 350px;
+    height: 40px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    background-image: #eee;
+    font-size: 1.3rem;
+    padding: .8rem;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 0 0 .8rem;
+    box-shadow: 1px 1px 4px #999;
 }
 
 header, footer {

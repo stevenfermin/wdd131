@@ -19,33 +19,47 @@
     </header>
     <main>
         <form method="get" action="review.html" class="wf1">
-            <label for="productList">
-            <select name="productList" id="productList" required>
-                <option value="" id="option" disabled selected>Select a Product</option>
+            <fieldset>
+                <div class="product">
+                <label for="productList"> Choose a product
+                <select name="productList" id="productList" required>
+                    <option value="" id="option" disabled selected>Select a Product</option>
 
-            </select>
-            </label>
-            <div>Overall Rating</div>
-            <div class="rating">
-                <label for="qualification1"><input type="radio" name="qualification" id="qualification1" value="1star" required>&star;</label>
-                <label for="qualification2"><input type="radio" name="qualification" id="qualification2" value="2star" required>&star;&star;</label>
-                <label for="qualification3"><input type="radio" name="qualification" id="qualification3" value="3star" required>&star;&star;&star;</label>
-                <label for="qualification4"><input type="radio" name="qualification" id="qualification4" value="4star" required>&star;&star;&star;&star;</label>
-                <label for="qualification5"><input type="radio" name="qualification" id="qualification5" value="5star" required>&star;&star;&star;&star;&star;</label>
+                </select>
+                </label>
+                </div>
+                
+                <div class="overal">
+                    <label>Overal Rating</label>
+                    <div class="rating">
+                    <label for="qualification1"><input type="radio" name="qualification" id="qualification1" value="1star" required>&star;</label>
+                    <label for="qualification2"><input type="radio" name="qualification" id="qualification2" value="2star" required>&star;&star;</label>
+                    <label for="qualification3"><input type="radio" name="qualification" id="qualification3" value="3star" required>&star;&star;&star;</label>
+                    <label for="qualification4"><input type="radio" name="qualification" id="qualification4" value="4star" required>&star;&star;&star;&star;</label>
+                    <label for="qualification5"><input type="radio" name="qualification" id="qualification5" value="5star" required>&star;&star;&star;&star;&star;</label>
+                    </div>
+                </div>
+                <div class="instalation">
+                    <label for="instalation">Date of Instalation</label>
+                    <input type="date" id="instalation" name="instalation" required>
+                </div>
+            </fieldset>
+            <fieldset>
+            <div class="feature">
+            <label>Which features did you find useful in the product? (Check all that apply)</label>
+                <label for="features1"><input type="checkbox" id="features1" name="features" required>Durability</label>
+                <label for="features2"><input type="checkbox" id="features2" name="features" required>Ease of Use</label>
+                <label for="features3"><input type="checkbox" id="features3" name="features" required>Performance</label>
+                <label for="features4"><input type="checkbox" id="features4" name="features" required>Design</label>
             </div>
-
-            <label for="instalation">Date of Instalation</label>
-            <input type="date" id="instalation" name="instalation" required>
-
-            <label>Which features did you find useful in the product?</label>
-            <label for="features1"><input type="checkbox" id="features1" name="features" required>Durability</label>
-            <label for="features2"><input type="checkbox" id="features2" name="features" required>Ease of Use</label>
-            <label for="features3"><input type="checkbox" id="features3" name="features" required>Performance</label>
-            <label for="features4"><input type="checkbox" id="features4" name="features" required>Design</label>
-
-            <label for="review">Write a review</label>
-            <textarea name="review" id="review"></textarea>
-
+            <div class="review">
+                <label for="review">Write a review</label>
+                <textarea name="review" id="review"></textarea>
+                
+                <label for="name">Your name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            </fieldset>
             <input type="submit" value="Send Review">
         </form>
     </main>

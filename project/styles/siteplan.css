@@ -5,6 +5,7 @@
     --secondary-color: rgb(0,0,0);
     --background: rgba(243, 239, 239, 0.977);
     --price-color: rgb(10, 255, 6);
+    --strong-color: rgb(174, 185, 244);
 }
 
 *{
@@ -68,6 +69,15 @@ header, main, footer{
     padding: 15px;
     margin: 25px;
     border-radius: 25px;
+}
+
+.intro p {
+    margin-top: 1rem;
+}
+
+p strong{
+    color: var(--strong-color);
+    font-size: 1.3rem;
 }
 
 /*Market Page*/

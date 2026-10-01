@@ -42,25 +42,30 @@
             </div>
             <div class="receive">
                 <h1>We can receive your car!</h1>
-                <form action="submit">
-                    <div>
-
-                        <label for="brand">Brand:</label> 
-                        <textarea name="brand" id="brand" placeholder="Toyota"></textarea>
-                    </div>
-                    <div>
-                        <label for="model">Model:</label> 
-                        <textarea name="" id=""></textarea>
-                    </div>
-                    <div>
-                        <label for="year">Year:</label> 
-                        <textarea name="" id=""></textarea>
-                    </div>
-                    <div>
-                        <label for="motor">Motor:</label> 
-                        <textarea name="" id=""></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
+                <form action="submit" class="info">
+                    <fieldset class="client">
+                        <legend>Your information:</legend>
+                        <label for="fullname">Full name:<input type="text"></label>
+                        <label for="email">Email: <input type="email" placeholder="pedrohdz@gmail.com"></label>
+                        <label for="phone">Phone Number: <input type="number" placeholder="10257963145"></label>
+                    </fieldset>
+                    <fieldset class="car">
+                        <legend>Car Information:</legend>
+                        <div>
+                            <label for="brand">Brand:<input name="brand" id="brand" placeholder="Toyota" required></input></label> 
+                        </div>
+                        <div>
+                            <label for="model">Model:<input type="text" name="model" id="model" placeholder="Land Cruiser Prado" required></label> 
+                            
+                        </div>
+                        <div>
+                            <label for="year">Year: <input type="number" name="year" id="year" required></label> 
+                        </div>
+                        <div>
+                            <label for="motor">Motor: <input type="text" name="motor" id="motor" required> </label> 
+                        </div>
+                    </fieldset>
+                    <button type="submit">Send request</button>
                 </form>
             </div>
         </section>

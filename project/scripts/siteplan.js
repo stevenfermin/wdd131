@@ -1,3 +1,13 @@
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation2");
+const sectparent = document.querySelector("#org")
+
+hamButton.addEventListener("click", () => {
+	navigation.classList.toggle("open");
+    sectparent.classList.toggle("close");
+	hamButton.classList.toggle("open");
+});
+
 const Cars = [
     {
         brand: "Ford",

@@ -8,7 +8,7 @@ const navparent = document.querySelector("#navparent")
 
 hamButton.addEventListener("click", () => {
 	navigation.classList.toggle("open");
-    navparent.classList.toggle("close");
+  navparent.classList.toggle("close");
 	hamButton.classList.toggle("open");
 });
 

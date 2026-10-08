@@ -187,13 +187,6 @@ img {
     font-weight: 600;
     align-items: center;
     justify-content: space-evenly;
-}
-
-
-
-ul {
-    display: flex;
-    flex-direction: column;
     list-style-type: none;
 }
 

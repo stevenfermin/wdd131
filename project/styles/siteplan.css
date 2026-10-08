@@ -15,8 +15,7 @@
 }
 
 body{
-    /*background-color: var(--background);*/
-    background: url('../images/dubai-skyline.jpg');
+    background-color: var(--background);
     background-size: cover;
     background-position: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -89,6 +88,48 @@ main{
 p strong{
     color: var(--strong-color);
     font-size: 1.3rem;
+}
+
+/*#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 2rem;
+    place-items: center;
+}
+
+.card {
+    font-size: small;
+    width: 90%;
+    padding: 5% 0;
+    background-color: lightgrey;
+}
+
+img {
+    width: 10rem;
+    height: 8rem;
+    margin: 0.5rem;
+    box-shadow: 0 0 15px #333;
+    object-fit: cover;
+}*/
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2rem;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--primary-design-color);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border-radius: 25px;
+}
+
+img {
+    width: 27rem;
+    height: 13rem;
 }
 
 /*Market Page*/

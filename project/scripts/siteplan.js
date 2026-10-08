@@ -38,6 +38,36 @@ const Cars = [
         seats: 1,
         price: 62100,
         imageUrl: "images/yamaha-h2r-750px.webp"
+    },
+    {
+        brand: "Mercedez-Benz",
+        model: "Sprinter",
+        type: "Van",
+        year: 2026,
+        engine: "2.0L biturbo 4 cilinders",
+        seats: 21,
+        price: 98000,
+        imageUrl: "images/mercedez-sprinter-750px.webp"
+    },
+    {
+        brand: "BMW",
+        model: "M4 Competition",
+        type: "Coupe",
+        year: 2025,
+        engine: "3.0L biturbo 6 cilinders",
+        seats: 4,
+        price: 83000,
+        imageUrl: "images/bmw-m4-750px.webp"
+    },
+    {
+        brand: "Toyota",
+        model: "Tacoma",
+        type: "Truck",
+        year: 2020,
+        engine: "3.5L V6",
+        seats: 5,
+        price: 23000,
+        imageUrl: "images/toyota-tacoma-750px.webp"
     }
     
 ]
@@ -112,7 +142,7 @@ function createCarCard(filteredCars){
         year.innerHTML = `<span class="label">Year:</span> ${car.year}`;
         engine.innerHTML = `<span class="label">Engine:</span> ${car.engine}`;
         seats.innerHTML = `<span class="label">Seats:</span> ${car.seats}`;
-        price.innerHTML = `<span class="label">Price:</span> <span class="value">${car.price}</span>`;
+        price.innerHTML = `<span class="label">Price:</span> <span class="value">USD$ ${car.price}</span>`;
 
         card.appendChild(image);
         card.appendChild(brand);

@@ -53,6 +53,13 @@ header, main, footer{
     transition: all 0.2s ease;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
 .navigation a:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -60,6 +67,10 @@ header, main, footer{
 }
 
 /*Main*/
+
+main{
+    padding: 1rem;
+}
 
 .intro {
     text-align: center;
@@ -88,20 +99,6 @@ p strong{
     gap: 1rem;
 }
 
-.org div{
-    background-color: var(--primary-design-color);
-    width: 95%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2em;
-    animation: fade 0.5s ease-out forwards;
-}
-
-
 
 @keyframes fade {
     0% {
@@ -119,27 +116,22 @@ img {
     border-radius: 25px;
 }
 
-.price {
-    color: var(--price-color);
-}
-
 /*Contact page*/
 .contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1em;
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary-design-color);
     width: 95%;
+    gap: 2rem;
     margin: 0 auto;
     padding: 2em;
     border-radius: 25px;
 }
 
 .location {
-    grid-column: 1/3;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: 1em;
 }
 
@@ -153,18 +145,25 @@ img {
 }
 
 .location table{
+    width: 70%;
+    height: 25em;
+    padding: 1em;
     background-color: var(--primary-color);
     border-radius: 10px;
     color: black;
-    grid-column: 2/3;
-    grid-row: 1/2;
+    font-size: 1.5rem;
+}
+td, th {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .info{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    height: 90%;
+    width: 70%;
+    height: 50rem;
     gap: 1rem;
     margin: 0 auto;
     padding: 5%;
@@ -172,27 +171,44 @@ img {
     color: var(--secondary-color);
     border-radius: 25px;
     align-items: center;
+    text-align: center;
 }
 
 .client, .car{
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    font-size: 1.2rem;
+    width: 80%;
 }
+
+
 
 .client{
     border-radius: 10px;
-    gap: 50px;
+    gap: 3rem;
+    height: 40%;
+}
+
+.client label:nth-of-type(1) input{
+    margin-left: 3.7rem;
+
+}
+
+.client label:nth-of-type(2) input{
+    margin-left: 6.3rem;
+
 }
 
 .car{
     border-radius: 10px;
-    gap: 20px;
+    gap: 3rem;
+    height: 50%;
 }
 
 legend{
     margin-left: 20px;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 
@@ -218,19 +234,133 @@ legend{
     border: 1px solid var(--primary-design-color);
 }
 
+button {
+    background-color: var(--primary-design-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-design-color);
+    border: 2px solid var(--primary-design-color);
+}
+
+.receive input:required{
+    border-bottom: solid 2px red;
+}
+
+.receive input:required:valid{
+    border-top: solid 5px green;
+    border-bottom: none;
+}
+
 #thead {
     border-bottom: 1px solid var(--secondary-color);
     font-size: 1.5em;
 }
 
+.value {
+    color: var(--price-color);
+}
+
 @media (min-width: 640px) {
-    /*.org div{
+    iframe{
+        width: 100%;
+        height: 70%;
+
+    }
+
+    .info{
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        gap: 1.2rem;
-        font-size: 1.7rem;
-    }    */
+        flex-direction: column;
+        width: 65%;
+        height: 40rem;
+        gap: 1rem;
+        margin: 0 auto;
+        padding: 5%;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 25px;
+        align-items: center;
+        text-align: center;
+    }
+    legend{
+        margin-left: 20px;
+        font-size: 1.5rem;
+    }
+
+    .client, .car{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        width: 80%;
+    }
+    .car{
+        border-radius: 10px;
+        gap: 2rem;
+        height: 60%;
+    }
+
+    .client label:nth-of-type(1) input{
+        margin-left: 3.3rem;
+
+    }
+
+    .client label:nth-of-type(2) input{
+        margin-left: 5.2rem;
+
+    }
+
+    .client{
+        border-radius: 10px;
+        gap: 2rem 0;
+        height: 40%;
+    }
+    
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-rows: repeat(2, minmax(300px, 1fr));
+        background-color: var(--primary-design-color);
+        width: 95%;
+        margin: 0 auto;
+        padding: 1em 2em;
+        border-radius: 25px;
+    }
+    .location {
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: row;
+        gap: 0 1.2rem;
+    }
+
+    .location table{
+        width: 70%;
+        height: 70%;
+        padding: 1em;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        color: black;
+        font-size: 1rem;
+    }
+    td, th {
+        padding: 0;
+        text-align: center;
+        font-size: 1.25rem;
+    }
 }
 
 /*Footer*/
+
+footer{
+    background-color: var(--primary-design-color);
+    text-align: center;
+    padding: 1rem;
+}

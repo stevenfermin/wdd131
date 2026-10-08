@@ -8,7 +8,7 @@
     <meta name="author" content="Cesar Steven Fermin Cabrera">
     <meta name="description" content="This page will be displaying some cars in sale for the user giving them options to buy depending on his needs">
     <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/siteplan.js"></script>
+    <script src="scripts/siteplan.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,137 +27,23 @@
             <p>Here you will find the car that will fit with your needs.</p><p> <strong> Why should you find a car through us?</strong> We have several brands and models that could interest you to get! Below you will find many options that you could check. </p> <p> <strong>Can you receive information in any time of the day?</strong> Yes! if you want to receive more information about an specific model, please go to the about us section to contact us!</p>
         </section>
         <section class="org">
-            <div>
-                <picture>
-                    <source srcset="images/ford-mustang-750px.webp" media="(min-width: 500px)">
-                    <img src="images/ford-mustang-250px.webp" alt="Ford Mustang GT 2018" loading="lazy">
-                </picture>
-                    <table>
-                        <tr>
-                            <th>Brand:</th>
-                            <td>Ford</td>
-                        </tr>
-                        <tr>
-                            <th>Model:</th>
-                            <td>Mustang GT</td>
-                        </tr>
-                        <tr>
-                            <th>Year:</th>
-                            <td>2018</td>
-                        </tr>
-                        <tr>
-                            <th>Motor:</th>
-                            <td>V8 5.0L</td>
-                        </tr>
-                        <tr>
-                            <th>Seats:</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th>Price:</th>
-                            <td class="price">USD$45,000</td>
-                        </tr>
-                    </table>
-            </div>
-            <div>
-                <picture>
-                    <source srcset="images/hyundai-palisade-750px.webp" media="(min-width: 500px)">
-                    <img src="images/hyundai-palisade-500px.webp" alt="Hyundai Palisade 2023" loading="lazy">
-                </picture>
-                    <table>
-                        <tr>
-                            <th>Brand:</th>
-                            <td>Ford</td>
-                        </tr>
-                        <tr>
-                            <th>Model:</th>
-                            <td>Mustang GT</td>
-                        </tr>
-                        <tr>
-                            <th>Year:</th>
-                            <td>2018</td>
-                        </tr>
-                        <tr>
-                            <th>Motor:</th>
-                            <td>5.0L</td>
-                        </tr>
-                        <tr>
-                            <th>Seats:</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th>Price:</th>
-                            <td class="price">USD$45,000</td>
-                        </tr>
-                    </table>
-            </div>
-            <div>
-                <picture>
-                    <source srcset="images/ford-f150-750px.webp" media="(min-width: 500px)">
-                    <img src="images/ford-f150-500px.webp" alt="Ford F-150 Raptor 2010" loading="lazy">
-                </picture>
-                    <table>
-                        <tr>
-                            <th>Brand:</th>
-                            <td>Ford</td>
-                        </tr>
-                        <tr>
-                            <th>Model:</th>
-                            <td>F-150 Raptor</td>
-                        </tr>
-                        <tr>
-                            <th>Year:</th>
-                            <td>2010</td>
-                        </tr>
-                        <tr>
-                            <th>Motor:</th>
-                            <td>V8 5.4L</td>
-                        </tr>
-                        <tr>
-                            <th>Seats:</th>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <th>Price:</th>
-                            <td class="price">USD$20,000</td>
-                        </tr>
-                    </table>
-            </div>
-            <div>
-                <picture>
-                    <source srcset="images/yamaha-h2r-750px.webp" media="(min-width: 500px)">
-                    <img src="images/yamaha-h2r-500px.webp" alt="Ford F-150 Raptor 2010" loading="lazy">
-                </picture>
-                    <table>
-                        <tr>
-                            <th>Brand:</th>
-                            <td>Kawasaki</td>
-                        </tr>
-                        <tr>
-                            <th>Model:</th>
-                            <td>Ninja H2R</td>
-                        </tr>
-                        <tr>
-                            <th>Year:</th>
-                            <td>2015</td>
-                        </tr>
-                        <tr>
-                            <th>Motor:</th>
-                            <td>4 Cilinders</td>
-                        </tr>
-                        <tr>
-                            <th>Seats:</th>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <th>Price:</th>
-                            <td class="price">USD$62,100</td>
-                        </tr>
-                    </table>
-            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" id="all">All Cars</a></li>
+                    <li><a href="#" id="sedan">Sedan</a></li>
+                    <li><a href="#" id="coupe">Coupe</a></li>
+                    <li><a href="#" id="motorbike">Motorbike</a></li>
+                    <li><a href="#" id="truck">truck</a></li>
+                    <li><a href="#" id="suv">SUV</a></li>
+                    <li><a href="#" id="van">Van</a></li>
+                </ul>
+            </nav>
         </section>
+        <div id="container">
+
+        </div>
     </main>
-    <!--<footer>
-    </footer>-->
+    <footer id="footer">
+    </footer>
 </body>
 </html>

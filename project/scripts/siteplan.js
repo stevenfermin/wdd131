@@ -95,6 +95,36 @@ const Cars = [
         seats: 5,
         price: 23000,
         imageUrl: "images/toyota-tacoma-750px.webp"
+    },
+    {
+        brand: "Honda",
+        model: "Civic Type-R",
+        type: "Sedan",
+        year: 2020,
+        engine: "2.0L VTEC Turbo 4 cilinders",
+        seats: 5,
+        price: 44500,
+        imageUrl: "images/honda-civic-750px.webp"
+    },
+    {
+        brand: "Hyundai",
+        model: "Elantra",
+        type: "Sedan",
+        year: 2020,
+        engine: "2.0L 4 cilinders",
+        seats: 5,
+        price: 18000,
+        imageUrl: "images/hyundai-elantra-750px.webp"
+    },
+    {
+        brand: "Toyota",
+        model: "Rav4 Limited Hybrid",
+        type: "SUV",
+        year: 2020,
+        engine: "2.5L 4 cilinders",
+        seats: 5,
+        price: 36800,
+        imageUrl: "images/toyota-rav4-750px.webp"
     }
     
 ]

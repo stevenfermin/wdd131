@@ -517,8 +517,8 @@ button:hover {
         gap: 1rem;
     }
 
-    .history h1, h2{
-        width: 50%;
+    .history h1, .history h2{
+        width: 90%;
         background-color: var(--primary-design-color);
         text-align: center;
         border-radius: 1rem;

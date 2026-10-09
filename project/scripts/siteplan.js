@@ -8,6 +8,23 @@ hamButton.addEventListener("click", () => {
 	hamButton.classList.toggle("open");
 });
 
+const countVisits = document.getElementById("welcome");
+let mssg = document.createElement("p");
+mssg.className = "visits";
+let numberVisits = Number(window.localStorage.getItem("visits-ls")) || 0;
+
+if (numberVisits === 0) {
+	countVisits.innerHTML = `This is your first visit. 🥳 Welcome!`;
+} else {
+	countVisits.innerHTML = `Welcome again!`;
+    mssg.innerHTML =  `Thanks for comming ${numberVisits} times!`;
+    document.getElementById("welcome").appendChild(mssg);
+}
+
+numberVisits++;
+
+localStorage.setItem("visits-ls", numberVisits);
+
 const Cars = [
     {
         brand: "Ford",
